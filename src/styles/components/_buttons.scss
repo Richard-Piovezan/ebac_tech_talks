@@ -1,3 +1,5 @@
+@use "../vars";
+
 .button {
     padding: 12px;
     font-size: 18px;
@@ -6,10 +8,18 @@
     text-transform: uppercase;
     text-align: center;
     white-space: nowrap;
+    transition: .3s;
+    cursor: pointer;
 
     &--primary {
-        background-color: #4F2AC3;
-        color: #FFFFFF;
+        background-color: vars.$button-primary;
+        color: vars.$text-color;
+        box-shadow: rgba(0, 0, 0, 0.54) 0px 3px 8px;
+
+        &:hover {
+            background-color: lighten(vars.$button-primary, 10%);
+            box-shadow: rgba(0, 0, 0, 0.84) 0px 3px 8px;
+        }
     }
 
     @media (max-width: 640px) {

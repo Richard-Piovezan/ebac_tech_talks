@@ -1,12 +1,16 @@
+@use "vars";
 @use "hero";
 @use "components/infos-bar";
 @use "components/buttons";
+@use "event";
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: vars.$font-main;
+    color: vars.$text-color;
+    cursor: default;
 }
 
 .container {

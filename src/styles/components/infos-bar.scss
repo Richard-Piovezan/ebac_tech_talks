@@ -1,3 +1,5 @@
+@use "../vars";
+
 .hero__infos-bar {
     display: flex;
     justify-content: space-between;
@@ -9,11 +11,12 @@
         gap: 40px;
 
         &__item {
+            color: vars.$text-color-secondary;
             font-size: 14px;
-            color: #000000;
             list-style: none;
 
             b {
+                color: vars.$text-color-secondary;
                 font-size: 18px;
                 display: block;
                 margin-bottom: 8px;
